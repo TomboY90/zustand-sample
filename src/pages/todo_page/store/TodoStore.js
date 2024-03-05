@@ -5,12 +5,7 @@ import { devtools } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer'
 
 const todoStore = (set, get) => ({
-  todoList: [
-    { id: 1, name: 'zustand 세팅', completed: true },
-    { id: 2, name: '샘플 만들기', completed: false },
-    { id: 3, name: 'store 만들기', completed: false },
-    { id: 4, name: 'immer 사용해보기', completed: false },
-  ],
+  todoList: [],
   search: '',
 
   getters: {

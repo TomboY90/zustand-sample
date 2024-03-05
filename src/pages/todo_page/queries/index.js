@@ -14,7 +14,7 @@ const todoQueryKeys = createQueryKeys('todo', {
 
 export const useFetchAllTodoList = () => useQuery({
   queryKey: todoQueryKeys.fetchAllTodoList().queryKey,
-  queryFn: TodoApi.getAllTodoList(),
+  queryFn: () => TodoApi.getAllTodoList(),
 })
 
 export const useFetchTodoItemDetail = (todoId) => useQuery({

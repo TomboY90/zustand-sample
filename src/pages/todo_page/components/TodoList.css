@@ -1,5 +1,8 @@
 .card {
+  max-height: 60vh;
   padding: 2em;
+
+  overflow-y: auto;
 }
 
 .card > div {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TodoStore } from "../store/TodoStore.js"
+import { TodoStore } from "../pages/todo_page/store/TodoStore.js"
 
 const SearchComponent = () => {
   const search = TodoStore(state => state.search);
