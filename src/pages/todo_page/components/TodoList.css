@@ -1,0 +1,13 @@
+.card {
+  padding: 2em;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #dedede;
+  margin: 20px 0;
+}
