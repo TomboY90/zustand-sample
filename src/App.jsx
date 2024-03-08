@@ -1,14 +1,14 @@
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import './App.css'
 
-import TodoPage from "./pages/todo_page/TodoPage.jsx";
+import RootRouter from "./router/index.jsx";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TodoPage />
+      <RootRouter />
     </QueryClientProvider>
   )
 }

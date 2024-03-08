@@ -4,7 +4,7 @@ import {useQuery} from "@tanstack/react-query";
 import {TodoApi} from "../../../apis/TodoApi.js";
 
 // 사용하기 편하게 쿼리키를 관리한다.
-const todoQueryKeys = createQueryKeys('todo', {
+export const todoQueryKeys = createQueryKeys('todo', {
   // 목록 조회
   fetchAllTodoList: () => ['fetchAllTodoList'],
 

@@ -10,4 +10,8 @@ export class TodoApi {
   static getTodoItem(todoId) {
     return axios.get(`${this.BASE_URL}/todos/${todoId}`)
   }
+
+  static modifyTodoItem(todo) {
+    return axios.put(`${this.BASE_URL}/todos/${todo.id}`, todo)
+  }
 }
